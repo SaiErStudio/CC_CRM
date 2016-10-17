@@ -7,5 +7,6 @@ return array(
         '__Js__' => __ROOT__.'/Public/js',
         '__Image__'=>__ROOT__.'/Public/image'
     ),
+    
 
 );
