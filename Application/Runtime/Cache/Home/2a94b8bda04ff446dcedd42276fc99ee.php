@@ -1,135 +1,146 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
-<title>Bootstrap响应式登录界面模板</title>
+	<meta charset="UTF-8">
+	<title>课程列表页面</title>
+	<link rel="stylesheet" href="/CC_CRM/Public/css/bootstrap.min.css">
+<style>
 
-<link rel="stylesheet" type="text/css" href="/CC_CRM/Public/css/bootstrap.min.css" />
-
-<style type="text/css">
-html,body {
-	height: 100%;
-}
-.box {
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6699FF', endColorstr='#6699FF'); /*  IE */
-	background-image:linear-gradient(bottom, #6699FF 0%, #6699FF 100%);
-	background-image:-o-linear-gradient(bottom, #6699FF 0%, #6699FF 100%);
-	background-image:-moz-linear-gradient(bottom, #6699FF 0%, #6699FF 100%);
-	background-image:-webkit-linear-gradient(bottom, #6699FF 0%, #6699FF 100%);
-	background-image:-ms-linear-gradient(bottom, #6699FF 0%, #6699FF 100%);
-
-	margin: 0 auto;
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-.login-box {
-	width: 100%;
-	max-width:500px;
-	height: 400px;
-	position: absolute;
-	top: 50%;
-
-	margin-top: -200px;
-	/*设置负值，为要定位子盒子的一半高度*/
-
-}
-@media screen and (min-width:500px){
-	.login-box {
-		left: 50%;
-		/*设置负值，为要定位子盒子的一半宽度*/
-		margin-left: -250px;
-	}
-}
-
-.form {
-	width: 100%;
-	max-width:500px;
-	height: 275px;
-	margin: 25px auto 0px auto;
-	padding-top: 25px;
-}
-.login-content {
-	height: 300px;
-	width: 100%;
-	max-width:500px;
-	background-color: rgba(255, 250, 2550, .6);
-	float: left;
-}
-
-
-.input-group {
-	margin: 0px 0px 30px 0px !important;
-}
-.form-control,
-.input-group {
-	height: 40px;
-}
-
-.form-group {
-	margin-bottom: 0px !important;
-}
-.login-title {
-	padding: 20px 10px;
-	background-color: rgba(0, 0, 0, .6);
-}
-.login-title h1 {
-	margin-top: 10px !important;
-}
-.login-title small {
-	color: #fff;
-}
-
-.link p {
-	line-height: 20px;
-	margin-top: 30px;
-}
-.btn-sm {
-	padding: 8px 24px !important;
-	font-size: 16px !important;
-}
 </style>
-
 </head>
+<body style="margin-top:50px">
 
-<body>
-<div class="box">
-		<div class="login-box">
-			<div class="login-title text-center">
-				<h1><small>登录</small></h1>
-			</div>
-			<div class="login-content ">
-			<div class="form">
-			<form action="/CC_CRM/index.php/Home/Index/login" method="post">
-				<div class="form-group">
-					<div class="col-xs-12  ">
-						<div class="input-group">
-							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-							<input type="text" id="username" name="username" class="form-control" placeholder="用户名">
-						</div>
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="col-xs-12  ">
-						<div class="input-group">
-							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-							<input type="password" id="password" name="password" class="form-control" placeholder="密码">
-						</div>
-					</div>
-				</div>
-				<div class="form-group form-actions">
-					<div class="col-xs-4 col-xs-offset-4 ">
-						<button type="submit" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-off"></span> 登录</button>
-					</div>
-				</div>
-			</form>
-			</div>
-		</div>
-	</div>
+<div class="media tab container" style="border: 1px solid #eee;">
+  <a class="media-left" href="#">
+    <img src="/CC_CRM/Public/image/10.jpg" alt="...">
+  </a>
+  <div class="media-body" style="padding-left:30px; padding-top:7%">
+    <h4 class="media-heading">课题名称：<span style="font-size:12px"> 文件标签</span></h4>
+
+     <h4 class="media-heading">作者：<span style="font-size:12px">  文件标签</span></h4>
+      <h4 class="media-heading">上传时间：<span style="font-size:12px">  文件标签</span></h4>
+       <h4 class="media-heading">时长：<span style="font-size:12px">  文件标签</span></h4>
+        <h4 class="media-heading">教具：<span style="font-size:12px">  文件标签</span>  <span style="font-size:12px">  文件标签</span>   <span style="font-size:12px">  文件标签</span></h4>
+
+
+  </div>
+  <p></p>
+</div>
+
+<div class="container" style="border:1px solid #ccc; margin-top:20px">
+<h4>课程简介</h4>
+<p>Vestibulum consectetur scelerisque lacus, ac fermentum lorem convallis sed. Nam odio tortor, dictum quis malesuada at, pellentesque vitae orci. Vivamus elementum, felis eu auctor lobortis, diam velit egestas lacus, quis fermentum metus ante quis urna. Sed at facilisis libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum bibendum blandit dolor. Nunc orci dolor, molestie nec nibh in, hendrerit tincidunt ante. Vivamus sem augue, hendrerit non sapien in, mollis ornare augue.
+</p>
 </div>
 
 
-</body>
 
+<div class="row" style="margin-top:50px ;">
+<div class="container" style="border:1px solid #ccc">
+<div class="row">
+<div class=" col-xs-8 col-md-6">
+<h4>课题名称</h4>
+</div>
+
+<div class="col-xs-4 col-md-6 ">
+<h5 class="text-right">
+<a href="">更多</a></h5>
+</div>
+</div>
+
+<div class="row" style="margin-top:25px;border:1px solid #ccc;background-color:#ccc">
+<div class="col-md-6 ">
+<h4><a href="">课题名称</a></h4>
+</div>
+<div class="col-md-6 active">
+<form class="navbar-form navbar-right" role="search">
+
+        <button type="submit" class="btn btn-info">查看</button>
+         <button type="submit" class="btn btn-info">下载</button>
+          <button type="submit" class="btn btn-info">教具</button>
+          <button type="submit" class="btn btn-info">收藏</button>
+      </form>
+
+</div>
+
+</div>
+<div class="row" style="margin-top:25px;border:1px solid #ccc">
+<div class="col-md-6 ">
+<h4><a href="">课题名称</a></h4>
+</div>
+<div class="col-md-6 ">
+<form class="navbar-form navbar-right" role="search">
+
+      <button type="submit" class="btn btn-info">查看</button>
+         <button type="submit" class="btn btn-info">下载</button>
+          <button type="submit" class="btn btn-info">教具</button>
+          <button type="submit" class="btn btn-info">收藏</button>
+      </form>
+
+</div>
+
+</div>
+
+<div class="row" style="margin-top:25px;border:1px solid #ccc;background-color:#ccc">
+<div class="col-md-6 ">
+<h4><a href="">课题名称</a></h4>
+</div>
+<div class="col-md-6 ">
+<form class="navbar-form navbar-right" role="search">
+
+        <button type="submit" class="btn btn-info">查看</button>
+         <button type="submit" class="btn btn-info">下载</button>
+          <button type="submit" class="btn btn-info">教具</button>
+          <button type="submit" class="btn btn-info">收藏</button>
+      </form>
+
+</div>
+
+</div>
+<div class="row" style="margin-top:25px;border:1px solid #ccc">
+<div class="col-md-6 ">
+<h4><a href="">课题名称</a></h4>
+</div>
+<div class="col-md-6 ">
+<form class="navbar-form navbar-right" role="search">
+
+        <button type="submit" class="btn btn-info">查看</button>
+         <button type="submit" class="btn btn-info">下载</button>
+          <button type="submit" class="btn btn-info">教具</button>
+          <button type="submit" class="btn btn-info">收藏</button>
+      </form>
+
+</div>
+
+</div>
+<div class="row" style="margin-top:25px;border:1px solid #ccc;background-color:#ccc">
+
+
+<div class="col-md-6 "  >
+<h4><a href="">课题名称</a></h4>
+</div>
+<div class="col-md-6 " style="">
+<form class="navbar-form navbar-right" role="search">
+
+        <button type="submit" class="btn btn-info">查看</button>
+         <button type="submit" class="btn btn-info">下载</button>
+          <button type="submit" class="btn btn-info">教具</button>
+          <button type="submit" class="btn btn-info">收藏</button>
+      </form></div>
+
+
+
+
+</div>
+</div>
+
+
+
+</div>
+
+
+
+<script src="/CC_CRM/Public/js/jquery.js"></script>
+<script src="/CC_CRM/Public/js/bootstrap.min.js"></script>
+</body>
 </html>
